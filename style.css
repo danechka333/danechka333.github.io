@@ -223,11 +223,11 @@
 }
 
 .timer {
-  height: 246px;
+  height: 361px;
   width: 575px;
   position: relative;
   right: 0px;
-  top: 180px;
+  top: 31px;
 }
 
 .timer__item.timer__days {
@@ -250,8 +250,7 @@ div {
 
 h1 {
   position: relative;
-  right: 0px;
-  width: 575px;
+  width: 358px;
   text-align: center;
   top: 16px;
 }
@@ -261,6 +260,7 @@ h2 {
   position: relative;
   text-align: center;
   color: #858585ff;
+  width: 358px;
 }
 
 .main-d41500 {
@@ -268,7 +268,7 @@ h2 {
 }
 
 .screen {
-  height: 829px;
+  height: 640px;
   background-color: #181818ff;
 }
 
@@ -287,7 +287,7 @@ h2 {
 }
 
 .hours {
-  width: 122px;
+  width: 92px;
   bottom: 0px;
   position: relative;
   right: -5px;
@@ -296,23 +296,23 @@ h2 {
 }
 
 .timer__item.timer_days {
-  width: 129px;
+  width: 358px;
   background-color: #3c3c3cff;
-  right: -6px;
   position: relative;
-  top: 62px;
+  top: 20px;
+  left: 1px;
 }
 
 .timer__items.timer__hours {
-  width: 129px;
+  width: 104px;
   background-color: #3c3c3cff;
   position: relative;
-  right: -145px;
-  top: -4px;
+  right: -6px;
+  top: 72px;
 }
 
 .days {
-  right: -5px;
+  right: -116px;
   position: relative;
   bottom: 0px;
   top: 29px;
@@ -323,22 +323,22 @@ h2 {
 
 .timer__items.timer__minutes {
   background-color: #3c3c3cff;
-  width: 129px;
+  width: 104px;
   position: relative;
-  top: -134px;
-  right: -283px;
+  top: -58px;
+  right: -126px;
 }
 
 .timer__items.timer__seconds {
   background-color: #3c3c3cff;
-  width: 129px;
+  width: 104px;
   position: relative;
-  top: -264px;
-  right: -422px;
+  top: -188px;
+  right: -246px;
 }
 
 .minutes {
-  width: 122px;
+  width: 92px;
   right: -5px;
   top: 29px;
   font-size: 64px;
@@ -349,7 +349,7 @@ h2 {
   position: relative;
   right: -5px;
   top: 29px;
-  width: 122px;
+  width: 93px;
 }
 
 .h2-d8778e {
@@ -360,35 +360,44 @@ h2 {
 }
 
 .author {
-  right: -218px;
+  right: -112px;
   position: relative;
   width: 133px;
-  top: -143px;
+  top: -184px;
 }
 
 .d_name {
   position: relative;
-  right: -8px;
-  top: -320px;
+  right: -115px;
+  top: -370px;
   width: 118px;
 }
 
 .h_name {
   width: 118px;
-  top: -349px;
-  right: -153px;
+  top: -218px;
+  right: 1px;
 }
 
 .m_name {
   width: 118px;
-  top: -377px;
-  right: -294px;
+  top: -246px;
+  right: -121px;
 }
 
 .s_name {
   width: 118px;
-  top: -404px;
-  right: -426px;
+  top: -274px;
+  right: -240px;
+}
+
+.timer__item {
+  position: relative;
+  left: 107px;
+}
+
+.timer__items {
+  position: relative;
 }
 
 @media screen and (min-width: 360px) {
@@ -468,6 +477,7 @@ h2 {
     color: #d5d5d5ff;
     background-color: #272727ff;
     height: 130px;
+    position: relative;
   }
 
   .screen {
@@ -495,11 +505,14 @@ h2 {
     width: 360px;
     height: 388px;
     top: 8px;
+    max-width: 360px;
+    min-width: 15px;
   }
 
   .timer__item {
     left: 0px;
     top: -18px;
+    position: relative;
     width: 20px;
   }
 
@@ -530,6 +543,7 @@ h2 {
   .h_name {
     right: -1px;
     top: -209px;
+    position: relative;
   }
 
   .hours {
@@ -546,6 +560,7 @@ h2 {
   .minutes {
     height: 81px;
     width: 95px;
+    position: relative;
   }
 
   .author {
@@ -576,6 +591,7 @@ h2 {
   .s_name {
     left: 246px;
     top: -266px;
+    position: relative;
   }
 
 }
@@ -736,3 +752,4 @@ h2 {
   }
 
 }
+
