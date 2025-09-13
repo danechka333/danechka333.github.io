@@ -1,265 +1,97 @@
-.timer {
-  height: 361px;
-  width: 575px;
-  position: relative;
-  right: 0px;
-  top: 31px;
-}
-
-.timer__item.timer__days {
-  width: 219px;
-  height: 28auto;
-  left: 0px;
-  right: 0px;
-}
-
-.top {
-  height: 130px;
-  background-color: #181818ff;
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #ddd;
 }
 
 .screen {
-  height: 640px;
-  background-color: #181818ff;
+    min-height: 100vh;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.timer__item.timer_hours {
-  width: 139px;
-  position: relative;
-  right: 0px;
-  top: 57px;
-  height: 132px;
-  background-color: #3c3c3c;
+.top {
+    background-color: #272727ff;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.hours {
-  width: 92px;
-  bottom: 0px;
-  position: relative;
-  right: -5px;
-  top: 29px;
-  font-size: 64px;
+.top_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.timer__item.timer_days {
-  width: 358px;
-  background-color: #3c3c3cff;
-  position: relative;
-  top: 20px;
-  left: 1px;
+.top_thai {
+    font-size: 1.8em;
+    margin: 0 0 5px 0;
 }
 
-.timer__items.timer__hours {
-  width: 104px;
-  background-color: #3c3c3cff;
-  position: relative;
-  right: -6px;
-  top: 72px;
+.top_counter {
+    color: #858585ff;
+    font-size: 1em;
+    margin: 0;
 }
 
-.days {
-  right: -116px;
-  position: relative;
-  bottom: 0px;
-  top: 29px;
-  width: 120px;
-  text-align: center;
-  font-size: 64px;
-}
-
-.timer__items.timer__minutes {
-  background-color: #3c3c3cff;
-  width: 104px;
-  position: relative;
-  top: -58px;
-  right: -126px;
-}
-
-.timer__items.timer__seconds {
-  background-color: #3c3c3cff;
-  width: 104px;
-  position: relative;
-  top: -188px;
-  right: -246px;
-}
-
-.minutes {
-  width: 92px;
-  right: -5px;
-  top: 29px;
-  font-size: 64px;
-}
-
-.seconds {
-  font-size: 64px;
-  position: relative;
-  right: -5px;
-  top: 29px;
-  width: 93px;
-}
-
-.author {
-  right: -112px;
-  position: relative;
-  width: 133px;
-  top: -184px;
-}
-
-.d_name {
-  position: relative;
-  right: -115px;
-  top: -370px;
-  width: 118px;
-}
-
-.h_name {
-  width: 118px;
-  top: -218px;
-  right: 1px;
-}
-
-.m_name {
-  width: 118px;
-  top: -246px;
-  right: -121px;
-}
-
-.s_name {
-  width: 118px;
-  top: -274px;
-  right: -240px;
-}
-
-.timer__item {
-  position: relative;
-  left: 107px;
+.timer {
+    background-color: #272727;
+    width: 100%;
+    max-width: 360px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
 }
 
 .timer__items {
-  position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #3c3c3cff;
+    padding: 5px;
 }
 
 .timer__items.timer__days {
-  width: 133px;
-  right: -18px;
-  top: 303px;
+    width: 100%;
+    order: -1;
 }
 
-.timer__items {
-  width: 135px;
-  right: 0px;
-  left: 164px;
-  top: 48px;
-  position: relative;
+.timer__items.timer__hours,
+.timer__items.timer__minutes,
+.timer__items.timer__seconds {
+    width: calc(33.33% - 10px);
 }
 
-.top {
-  height: 151px;
-  color: #d5d5d5ff;
-  background-color: #3c3c3cff;
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-.screen {
-  height: 640px;
-}
-
-.thai {
-  height: 41px;
-  width: 343px;
-  position: relative;
-  top: 11px;
-}
-
-.timer {
-  background-color: #272727ff;
-  width: 360px;
-  height: 388px;
-  top: 8px;
-  max-width: 360px;
-  min-width: 15px;
-}
-
-.timer__item {
-  left: 0px;
-  top: -18px;
-  position: relative;
-  width: 20px;
-}
-
-.timer__item.timer_days {
-  top: 29px;
-  left: 0px;
-  width: 360px;
-}
-
-.days {
-  width: 337px;
-  height: 94px;
-  font-size: 94px;
-  top: 8px;
-}
-
-.d_name {
-  top: -362px;
-  right: -113px;
-}
-
-.timer__items.timer__hours {
-  top: 74px;
-  width: 104px;
-  left: 11px;
-}
-
-.h_name {
-  right: -1px;
-  top: -209px;
-  position: relative;
-}
-
-.hours {
-  width: 92px;
-  height: 72px;
-}
-
-.timer__items.timer__minutes {
-  width: 104px;
-  top: -56px;
-  left: 131px;
-}
-
-.minutes {
-  height: 81px;
-  width: 95px;
-  position: relative;
+.d_name,
+.h_name,
+.m_name,
+.s_name {
+    font-size: 0.7em;
+    margin: 0;
 }
 
 .author {
-  right: -115px;
-  top: -179px;
-}
-
-.m_name {
-  position: relative;
-  right: -121px;
-  top: -237px;
-}
-
-.seconds {
-  top: 28px;
-  width: 104px;
-  left: 0px;
-  height: 79px;
-}
-
-.timer__items.timer__seconds {
-  top: -186px;
-  right: -428px;
-  left: 249px;
-  width: 104px;
-}
-
-.s_name {
-  left: 246px;
-  top: -266px;
-  position: relative;
+    color: #858585ff;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 318px;
 }
